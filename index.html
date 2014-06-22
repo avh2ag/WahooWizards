@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css"/> 
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/wahoo_wizards.css" type="text/css"/>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+		<title>Wahoo Wizards</title>
+	</head>
+	<body>
+		<div id="nav-wrapper" class="main-menu-wrapper sticky ">
+
+			<div id="topNav"class="navbar navbar-fixed-top">
+				
+				<div id="header_bg" >
+					
+					<div id="main_nav" class="navbar-inner row">
+						<div id="header-container" >
+							<h2 style="margin-left:7%;">Wahoo Wizards</h2>
+						</div>
+						
+							<u1 class="nav edit_nav main-menu large nav sf-menu sf-js-enabled" id="menu"style="float:right;">
+								<li> <a href='#home'><span class="main_nav">Home </span></a></li>
+								<li> <a href='#about'>About</a> </li>
+								<li> <a href='#experiments'>Experiments</a> </li>
+								<li> <a href ='#contact'>Contact</a> </li>
+							</u1>
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="home"></div>
+		<div id="banner" style="">
+			<img class="center" src="img/banner.png" style="width:100%"/> 
+			<div id="banner-tagline">
+				<span class="tagline-1">Bringing STEM to kids</span>
+				<span class="tagline-2">One classroom at a time</span>
+			</div>			
+		</div>
+
+		<div class="section" id="content-wrapper">
+			<div id="about" class="section">
+				<div class="title" >
+					<h3>What We Do</h3>
+				</div>
+				<div id="what-we-do" class="subsection">
+					<div class="widget widget-small left pop-out">
+					</div>
+					<div class="widget widget-large right pop-out">
+					</div>
+				</div>
+				<div class="title">
+					<h3>Why We Do It</h3>
+				</div>	
+				<div id="why-we-do" class="subsection">
+					<div class="widget widget-large left pop-out">
+					</div>
+					<div class="widget widget-small right pop-out">
+					</div>
+				</div>	
+			</div>
+			<div id="experiments" class="section">
+				<div class="title">
+					<h3>Experiments</h3>
+				</div>
+				<div id="experiment-slideshow" class="pop-out">
+				</div>
+				<div id="experiment-caption" class="pop-out">
+				</div>
+			</div>
+			<div id="contact" class="section">
+				<div class="title">
+					<h3>Contact Us</h3>
+				</div>
+			</div>
+
+		</div>
+	<script src='js/bootstrap.js'></script>
+	<script src='js/backstretch.js'></script>
+	<script src='js/what-we-do.js'></script>
+	<script>
+		
+		$(document).ready(function(){
+			if ($(window).width() >= 980){
+				$("#banner").css("position", "relative");
+				$("#banner").css("top", "65px");
+				$("#content-wrapper").css("top", "35px");
+			}
+			else {
+				$("#banner").css("top", "0px");
+				$("#content-wrapper").css("top", "0px");
+			}
+			//populate divs
+		});
+		$(window).resize(function(){
+			if ($(window).width() >= 980){
+				$("#banner").css("position", "relative");
+				$("#banner").css("top", "65px");
+				$("#content-wrapper").css("top", "35px");
+			}
+			else {
+				$("#banner").css("top", "0px");
+				$("#content-wrapper").css("top", "0px");
+			}
+		});
+
+
+	</script>
+	</body>
+</html>
